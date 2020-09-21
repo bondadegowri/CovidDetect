@@ -1,20 +1,18 @@
 # CovidDetect
+
+INSTALLING PYTHON
 A step-by-step guide on installing Python and using the Command Prompt for Windows
 
+
 Version: 1.1.0
-Date: 2017-01-03
-Author: Alberto Pettarin (contact)
-License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Date: 2020-09-20
+Author: Gowri Bondade
+
+
 Overview
-Do you want to run a Python program under Windows, but you have no experience using the Command Prompt?
 
-This guide is for you!
+After reading this page, you should be able to run a Python program confidently and safely.
 
-I will walk you through the installation of Python and I will explain the basics of the Command Prompt.
-
-After reading this page (and practicing a bit), you should be able to run a Python program confidently and safely.
-
-What Is Python?
 Python is a high-level, general-purpose programming language which allows people to easily create and share programs for a variety of applications.
 
 The Python project is a free (libre)/open source software (FLOSS) initiative, managed by the Python Software Foundation. You can download, install, and use Python for free on several platforms, including Linux, Mac OS X, and Windows computers.
