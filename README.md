@@ -1,7 +1,6 @@
 # CovidDetect
 
 INSTALLING PYTHON
-A step-by-step guide on installing Python and using the Command Prompt for Windows
 
 
 Version: 1.1.0
@@ -9,118 +8,34 @@ Date: 2020-09-20
 Author: Gowri Bondade
 
 
-Overview
-
-After reading this page, you should be able to run a Python program confidently and safely.
-
-Python is a high-level, general-purpose programming language which allows people to easily create and share programs for a variety of applications.
-
-The Python project is a free (libre)/open source software (FLOSS) initiative, managed by the Python Software Foundation. You can download, install, and use Python for free on several platforms, including Linux, Mac OS X, and Windows computers.
-
-Python enables the development of FLOSS programs, which are created for free by millions of volunteers around the globe and shared in source code form. This means that the end user who receives or downloads a Python program can actually check that the program does what is supposed to do, and nothing more (unlike closed-source programs, which send personal information to third parties, show you advertisements, or damage your computer).
-
-More details on Python can be found on the official Python page and on its Wikipedia page.
-
-In practice, to use a Python program you need two pieces of software:
-
-the Python interpreter, which is the "master" program that reads the source code of a Python program, and "execute" it; and
-the source code of the Python program, usually consisting of one or more files with .py extension, which performs the specific task you are interested in.
-This guide explains how to install the former, and it shows how to run the latter in the Command Prompt of Windows, with a complete, real-life example.
-
 Installing Python On Windows
 The preliminary step consists in installing the Python interpreter (i.e., the "master program") on your computer.
 
 Installing Python is a one-time operation. If you already installed Python in the past (for example, to run a different program), you do not need to install it again, and you can skip to the next section.
 
-Step 0: Should I Get Python 2 Or Python 3?
-At the time of writing (2017-01-01), there are two main versions of Python: Python 2 (2.7.13) and Python 3 (3.6.0).
+Let's assume we need to install Python 3.
 
-Discussing the technical differences between these two versions is beyond the scope of this guide. It suffices to say that some Python programs work with both versions of Python, while other Python programs work only with Python 2 but not with Python 3, or vice versa.
+Step 1: Download The latest version of Installer from https://python.org/:
 
-You should get the version of Python that the program you are interested in recommends. If the latter does not specify a version, get the latest Python 3 version available. If you later discover that your Python program does not work with the Python version you installed, do not worry: just uninstall it, and install the other one!
+Click on the Download > Latest Python 3.6.0
 
-In the rest of the guide we assume you need Python 3.
-
-Step 1: Download The Installer
-First, open your Web browser and go to https://python.org/:
-
-Python home page
-
-Click on the Download > Latest Python 3.6.0 link.
-
-You will get a page listing all the new features of Python 3.6.0:
-
-Python 3.6.0 download page
-
-Scroll down until you see the list of available downloads:
-
-Python 3.6.0 downloads
-
-If you have a recent Windows computer, very likely it is a 64-bit machine, so you should download the file labeled Windows x86-64 executable installer, and save it on your Download folder or on your Desktop:
-
-Python 3.6.0 downloads
-
-Downloading the file will take from few seconds to a few minutes, depending on the bandwidth of your Internet connection.
-
-(If you have an older PC that you know is a 32-bit computer, download the Windows x86 executable installer instead. You can tell whether your PC is a 32-bit or a 64-bit machine by reading the System Information in the Windows Control Panel.)
+You will get a page listing all the new features of Python 3.6.0 (64 or 32 bit based on PC).
 
 Step 2: Install Python
 Double-click on the file you just downloaded to start the installation wizard:
 
 Python 3.6.0 installer
 
-By default, the Add Python 3.6 to PATH option is disabled, but you should select it, as it makes running Python programs much much easier.
+By default, the Add Python 3.6 to PATH option is disabled, please should select it, it makes running Python programs easier.
 
-Most users should click the Install Now button, which installs Python with the default settings. (If you want to personalize your installation or you are told to enable some advanced features, click on the Customize installation option instead.)
+Most users should click the Install Now button, which installs Python with the default settings.
 
-The installer might ask you for administrative privileges or for confirmations like the following:
+Step 3: 
+Now open the Command Prompt, locate the Command Prompt icon in your Start menu (or use the search bar):
 
-Python 3.6.0 installer asking for confirmation
+The prompt line always starts with the location of the working directory, it is the folder where the command prompt is currently acting upon.
 
-You can safely answer Yes.
-
-A progress bar will appear:
-
-Python 3.6.0 installer progress bar
-
-until the installation completes with the following message:
-
-Python 3.6.0 installer completed
-
-Starting with Python 3.6.0, it is recommended to click on the Disable path length limit option, before closing the installer. If you do so, you will get a final confirmation dialog:
-
-Python 3.6.0 installer completed
-
-You can terminate the installation by clicking the Close button.
-
-Congratulations, you have your first Python installation under your belt!
-
-Using The Command Prompt
-Most Python programs are command line interface (CLI) utilities, which means that they are not operated via a graphical user interface (GUI), also known as "the program window". Instead, they must be executed in the Command Prompt of Windows, also known as "shell" or "terminal".
-
-Running a CLI program means typing a command string on the Command Prompt of Windows, following a certain syntax which depends on what the program is supposed to do. You can think of this act as reciting the "right spell" to get your job done.
-
-Opening A Command Prompt
-To open the Command Prompt, locate the Command Prompt icon in your Start menu (or use the search bar):
-
-Command Prompt icon
-
-Click on the icon. A black window appears:
-
-Command Prompt window
-
-The first two lines printed in the window show the version of the Command Prompt. The last line, which reads C:\Users\IEUser> in the screenshot above, is the prompt, where you can actually type commands.
-
-The prompt line always starts with the location of the working directory, that is, the folder where the command prompt is currently acting upon (C:\Users\IEUser in the screenshot above), and ends with the > character.
-
-The prompt normally opens in the home directory of the current user: in fact, we are in C:\Users\IEUser, because the user is called IEUser. If your Windows username is Olga, it is likely you will see C:\Users\Olga instead.
-
-(Different versions of Windows might have different paths for home directories.)
-
-In the documentation of Python programs you might find a $ character before examples of commands, as follows:
-
-$ python my_awesome_program.py
-because on Linux and Mac OS X machines the terminal prompt is usually a $ character.
+>>> python test.py
 
 You should not type the $ character, it is just a placeholder for your actual prompt. For any practical purpose, you can mentally replace the $ with your actual prompt, like C:\Users\IEUser> in the example above, as if the documentation was as follows:
 
