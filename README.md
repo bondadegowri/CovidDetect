@@ -6,6 +6,7 @@ INSTALLING PYTHON
 Version: 1.1.0
 Date: 2020-09-20
 Author: Gowri Bondade
+        Tarun raj
 
 
 Installing Python On Windows
